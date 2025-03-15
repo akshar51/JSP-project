@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: rgb(40, 40, 40);
+    padding: 0 8px 30px;
+    border-radius: 15px;
+}
+#display{
+    padding: 50px;
+    border-radius: 15px;
+    font-size: 25px
+}

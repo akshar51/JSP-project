@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!----- TITLE ------>
+    <div class="heading">
+        <h1>SLIDER</h1>
+    </div>
+    <!----- TITLE END ------>
+
+    <!------ SLIDER ------->
+    <div class="slider">
+        <div class="slider-item d-none active fade">
+            <img src="./image/img-1.jpg" alt="image-1">
+        </div>
+        <div class="slider-item d-none fade">
+            <img src="./image/img-2.jpg" alt="image-2">
+        </div>
+        <div class="slider-item d-none fade">
+            <img src="./image/img-3.jpg" alt="image-3">
+        </div>
+        <button class="prev" onclick="currSlide(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next" onclick="currSlide(1)"><i class="fa-solid fa-arrow-right-long"></i></button>
+        <div class="white">
+            <div class="btn-box" style="text-align:center">
+                <button class="dot red" onclick="slides(0)"></button>
+                <button class="dot" onclick="slides(1)"></button>
+                <button class="dot" onclick="slides(2)"></button>
+              </div>
+        </div>
+    </div>
+    <!-------- SLIDER END -------->
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
