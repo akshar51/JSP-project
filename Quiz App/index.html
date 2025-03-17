@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Web Test</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Javascript MCQ Test </h1>
+        <div id="timer">Time Left: 60s</div>
+        <div id="quiz-container">
+            <div id="question" class="question"></div>
+            <ul id="options" class="options"></ul>
+            <button id="prev" class="btn" onclick="prevQuestion()">Previous</button>
+            <button id="next" class="btn" onclick="nextQuestion()" disabled>Next</button>
+            <button id="submit" class="btn hidden" onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="result" class="hidden"></div>
+    </div>
+   
+    <script src="./js/script.js"></script>
+</body>
+</html>
