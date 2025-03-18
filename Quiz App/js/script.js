@@ -43,7 +43,7 @@ function loadQuestion(){
     })
     document.getElementById("prev").style.display = currentQueIdx === 0 ? "none":"inline-block";
     document.getElementById("next").style.display = currentQueIdx === questions.length-1 ? "none":"inline-block";
-    document.getElementById("submit").classList.toggle("hidden",currentQueIdx === questions.length - 1)
+    document.getElementById("submit").classList.toggle("hidden",currentQueIdx !== questions.length - 1)
     document.getElementById("next").disabled = !userAns[currentQueIdx];
 }
 
@@ -61,5 +61,23 @@ function nextQuestion(){
 function selectOption(opt){
     userAns[currentQueIdx]=opt;
     document.getElementById("next").disabled = false;
+}
+function prevQuestion(){
+    if(currentQueIdx>0){
+        currentQueIdx--;
+        loadQuestion()
+    }
+}
+function submitQuiz(){
+    clearInterval(timerInterval);
+    let score = 0;
+    questions.forEach((q,idx)=>{
+        if(userAns[idx]===q.answer){
+            score++;
+        }
+    })
+    document.getElementById("quiz-container").classList.add("hidden");
+    document.getElementById("result").classList.remove("hidden");
+    document.getElementById("result").innerHTML = `<h2>You scored ${score} out of ${questions.length} !</h2>`;
 }
 loadQuestion()
