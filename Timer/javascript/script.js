@@ -1,4 +1,5 @@
 let time = document.getElementById('time').innerText;
+let modal = document.querySelector('.modal')
 let resetTime = time;
 let count;
 
@@ -24,4 +25,12 @@ let resetTimer = ()=>{
     time = resetTime;
     document.getElementById('time').innerText = time;
 }
+
+// window.onload = ()=>{
+//     setInterval(()=>{
+//         modal.style.display = 'block'
+//     },1000)
+// }
+
+
 
