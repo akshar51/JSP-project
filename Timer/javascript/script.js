@@ -26,11 +26,10 @@ let resetTimer = ()=>{
     document.getElementById('time').innerText = time;
 }
 
-// window.onload = ()=>{
-//     setInterval(()=>{
-//         modal.style.display = 'block'
-//     },1000)
-// }
+window.onload = setInterval(()=>{
+        modal.style.display = 'block'
+    },1000)
+
 
 
 

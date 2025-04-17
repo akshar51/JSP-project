@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F6F1DE;
+    min-height: 100vh !important;
+}
+
+.main-container{
+    background-color: #3E3F5B;
+}
+
+.profile a{
+    font-size: 1.5rem;
+    color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.profile span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.form{
+    width: 30%;
+}
+.detail{
+    width: 70%;
+}
